@@ -1,0 +1,23 @@
+topic_name:
+  lidar: "/livox/lidar"
+  image: "/camera/image_color/compressed"
+
+# =================================================
+# < Topic Type >
+# - LiDAR
+#   0: sensor_msgs/ponitcloud2
+#   1: livox_ros_driver/CustomMsg.h
+# - Image
+#   0: Image
+#   1: CompressedImage
+# =================================================
+topic_type:
+  lidar: 1
+  image: 1
+
+# =================================================
+# < Estimation Type >
+# 0: Kalman Filter
+# 1: Test
+# =================================================
+estimation_type: 1

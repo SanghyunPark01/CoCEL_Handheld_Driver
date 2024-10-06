@@ -1,0 +1,4 @@
+<launch>
+    <rosparam command="load" file="$(find feedback_sensor_time)/config/param_topic.yaml" />
+    <node pkg="feedback_sensor_time" type="estimator_node" name="estimator_node" output="screen"/>
+</launch>
