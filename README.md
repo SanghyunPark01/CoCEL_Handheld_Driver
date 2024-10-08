@@ -107,7 +107,17 @@ $ roslaunch livox_ros_driver livox_trigger.launch
 ```
 
 ### STM32   
-Source Code in `cocel_handheld_trigger2`
+Source Code in `cocel_handheld_trigger2`  
+
+### Etc
+```bash
+$ sudo gedit /etc/rc.local
+```
+Write the command below above `exit0`  
+```
+chmod a+rw /dev/ttyUSB0
+chmod a+rw /dev/ttyACM0
+```
 
 ## Reference
 [1. LIV_handhold](https://github.com/sheng00125/LIV_handhold)  
